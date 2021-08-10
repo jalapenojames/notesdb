@@ -27,6 +27,17 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
+
+
+
+
+    # Allow requests from domain 'yourcustomdomain.com'
+    Rails.application.config.hosts << 'https://sheltered-anchorage-01714.herokuapp.com/'
+    
+
+
+
+
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
 

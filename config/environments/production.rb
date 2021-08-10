@@ -3,6 +3,12 @@ require "active_support/core_ext/integer/time"
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+
+  # Allow requests from domain 'yourcustomdomain.com'
+  Rails.application.config.hosts << 'https://sheltered-anchorage-01714.herokuapp.com/'
+
+
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
